@@ -3,8 +3,6 @@ import { makeStyles } from '@mui/styles';
 
 import styles from '../styles/VerticalTextSlider.module.css';
 
-const useStyles = makeStyles({});
-
 export const VerticalTextSlider = ({ staticText, dynamicTexts }) => {
     const renderStaticText = (staticText) => {
         if (!staticText) return null;
@@ -20,13 +18,10 @@ export const VerticalTextSlider = ({ staticText, dynamicTexts }) => {
         )
     }
 
-    const renderDynamicTextItem = ({text, emoji}, index) =>  (
+    const renderDynamicTextItem = ({ text }, index) =>  (
         <li className={styles.item} key={index}>
             <Typography variant='h3' component='span' className={styles[`gradientColor${index}`]}>
                 {text}
-            </Typography>
-            <Typography variant='h3' component='span'>
-                {emoji}
             </Typography>
         </li>
     )

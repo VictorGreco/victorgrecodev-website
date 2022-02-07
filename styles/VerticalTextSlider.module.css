@@ -3,12 +3,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 60%;
   }
   
   .textContainer {
     font-size: 40px;
     height: 75px;
     font-family: Montserrat;
+    width: 100%;
   }
   
   .dynamicText,
@@ -82,15 +84,111 @@
     font-weight: 800;
     line-height: 1
   }
+
+  .gradientColor3 {
+    background: -webkit-linear-gradient(-70deg,#FF5DA2 ,#99DDCC);
+    color: 'important';
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    font-weight: 800;
+    line-height: 1
+  }
+
+  .gradientColor4 {
+    background: -webkit-linear-gradient(-70deg,#998CEB,#B4FE98);
+    color: 'important';
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    font-weight: 800;
+    line-height: 1
+  }
+
+  .gradientColor5 {
+    background: -webkit-linear-gradient(-70deg,#B1D0E0,#B1D0E0);
+    color: 'important';
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    font-weight: 800;
+    line-height: 1
+  }
+
+  .gradientColor6 {
+    background: -webkit-linear-gradient(-70deg,#9A0680,#FFF5E1);
+    color: 'important';
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    font-weight: 800;
+    line-height: 1
+  }
+
+  .gradientColor7 {
+    background: -webkit-linear-gradient(-70deg,#ED5EDD,#8BDB81);
+    color: 'important';
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    font-weight: 800;
+    line-height: 1
+  }
+
+  .gradientColor8 {
+    background: -webkit-linear-gradient(-70deg,#8BDB81,#FFCBCB);
+    color: 'important';
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    font-weight: 800;
+    line-height: 1
+  }
+
+  .gradientColor9 {
+    background: -webkit-linear-gradient(-70deg,#FFCBCB,#E7FBBE);
+    color: 'important';
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    font-weight: 800;
+    line-height: 1
+  }
   
   @keyframes move {
     0% {
       top: 0px;
     }
-    33% {
-      top: -60px;
+    20% {
+      top: -50px;
     }
-    66% {
-      top: -120px;
+    40% {
+      top: -100px;
+    }
+    60% {
+      top: -150px;
+    }
+    80%{
+      top: -200px;
     }
   }
+
+@media screen and (max-width: 720px) {
+  .container {
+    width: 100%;
+  }
+}
