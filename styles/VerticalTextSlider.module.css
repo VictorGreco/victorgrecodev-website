@@ -1,0 +1,96 @@
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .textContainer {
+    font-size: 40px;
+    height: 75px;
+    font-family: Montserrat;
+  }
+  
+  .dynamicText,
+  .staticText {
+    display: inline-block;
+  }
+
+  .dynamicTextsWrapper,
+  .staticTextWrapper {
+    display: flex;
+  }
+  
+  .staticText {
+    background: -webkit-linear-gradient(-70deg,#a2facf,#64acff);
+    color: 'important';
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    font-weight: 800;
+    line-height: 1
+  }
+  
+  .dynamicText {
+    list-style: none;
+    overflow: hidden;
+    height: 1.4em;
+    margin: 3px 0 0 0;
+    padding: 0;
+  }
+
+  .item {
+    position: relative;
+    top: 0;
+    animation: move 15s infinite;
+  }
+
+  .gradientColor0 {
+    background: -webkit-linear-gradient(-70deg,#a2facf,#64acff);
+    color: 'important';
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    font-weight: 800;
+    line-height: 1
+  }
+
+  .gradientColor1 {
+    background: -webkit-linear-gradient(-70deg,#db469f,#2188ff);
+    color: 'important';
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    font-weight: 800;
+    line-height: 1
+  }
+
+  .gradientColor2 {
+    background: -webkit-linear-gradient(-70deg,#ff7170,#ffe57f);
+    color: 'important';
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
+    font-weight: 800;
+    line-height: 1
+  }
+  
+  @keyframes move {
+    0% {
+      top: 0px;
+    }
+    33% {
+      top: -60px;
+    }
+    66% {
+      top: -120px;
+    }
+  }
